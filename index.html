@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./index.js"></script>
+</head>
+<body>
+
+    <div id="app">
+        <h1>
+            this is {{name}}
+            <h1>this is {{xyz}}</h1>
+        </h1>
+
+        <p>nj</p>
+        <a>This is fahad {{state.state}}</a>
+        <button onclick="handleToggle()">click Me</button>
+    </div>
+    
+
+
+</body>
+<script>
+    let name = "danish";
+    let hello = 'hhi lee';
+    let xyz = "fdffd";
+    let state = useState("khan");
+    const handleToggle = ()=>{
+        state.state = ["ahmad","khan"].find(a=> a!==state.state);
+    }
+    const el = document.querySelector("#app");
+    init(el);
+</script>
+</html>
+
